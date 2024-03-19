@@ -4,6 +4,8 @@ ruby "3.3.0"
 
 # Adding faker gem
 gem "faker"
+
+# Adding gem for javascript run
 gem 'mini_racer'
 
 # Adding css
