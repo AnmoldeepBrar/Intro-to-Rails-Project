@@ -4,6 +4,7 @@ ruby "3.3.0"
 
 # Adding faker gem
 gem "faker"
+gem 'mini_racer'
 
 # Adding css
 gem 'bootstrap', '~> 5.1.3'
