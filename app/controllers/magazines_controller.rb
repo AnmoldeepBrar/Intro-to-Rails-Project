@@ -1,7 +1,4 @@
 class MagazinesController < ApplicationController
-  # def show_all
-  #   @magazines = Magazine.all
-  # end
   # Adding search function 
   def show_all
     if params[:search].present?
