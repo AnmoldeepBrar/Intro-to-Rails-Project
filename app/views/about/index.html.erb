@@ -1,0 +1,11 @@
+<h1>About Us</h1>
+
+<p>This is the About page of our web application.</p>
+
+<h2>Data Sources</h2>
+
+<ul>
+  <% @data_sources.each do |source| %>
+    <li><strong><%= source[:name] %>:</strong> <%= source[:description] %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brar Book Store</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <header>
+    <h1>Brar Book Store</h1>
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Books', books_path %></li>
+        <li><%= link_to 'Magazines', magazines_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <%= yield %>
+  </main>
+
+  <footer>
+    <p>Location: Winnipeg, Manitoba, Canada</p>
+  </footer>
+</body>
+</html>
