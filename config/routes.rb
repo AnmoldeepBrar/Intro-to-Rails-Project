@@ -27,13 +27,13 @@ Rails.application.routes.draw do
   # Routes for showing the search
   resources :books do
     collection do
-      get 'show_all' # Define custom route for show_all action
+      get 'show_all' 
     end
   end
 
   resources :magazines do
     collection do
-      get 'show_all' # Define custom route for show_all action
+      get 'show_all' 
     end
   end
 
