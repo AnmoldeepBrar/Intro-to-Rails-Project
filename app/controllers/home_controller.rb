@@ -43,8 +43,10 @@ class HomeController < ApplicationController
       @magazines = Magazine.includes(:book).where("magazines.title LIKE ?", "%#{params[:search]}%")
     else
       @books_with_magazines = Book.includes(:magazines).all
+      @magazines = Magazine.all
     end
-    
+  
     @books_with_magazines = @books_with_magazines.page(params[:page]).per(10)
   end
+  
 end
