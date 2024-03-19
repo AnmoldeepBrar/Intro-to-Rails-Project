@@ -15,7 +15,8 @@ Book.all.each do |book|
     Magazine.create!(
       title: Faker::Book.title,
       author: Faker::Book.author,
-      published_date: Faker::Date.backward(days: 365 * 5), # Random date within the last 5 years
+      # Random date within the last 5 years
+      published_date: Faker::Date.backward(days: 365 * 5), 
       publisher: Faker::Book.publisher,
       book: book
     )
