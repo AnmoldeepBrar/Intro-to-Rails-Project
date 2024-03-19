@@ -1,11 +1,4 @@
 class BooksController < ApplicationController
-  # def show_all
-  #   @books = Book.all
-  # end
-  # def show_all
-  #   @books = Book.includes(:magazines).page(params[:page]).per(10)
-  # end
-  # Adding search function 
   def show_all
     if params[:search].present?
       @books = Book.includes(:magazines).where("title LIKE ?", "%#{params[:search]}%").page(params[:page]).per(10)
