@@ -1,5 +1,4 @@
 class MagazinesController < ApplicationController
-  # Adding search function 
   def show_all
     if params[:search].present?
       @magazines = Magazine.where("title LIKE ?", "%#{params[:search]}%").page(params[:page]).per(20)
